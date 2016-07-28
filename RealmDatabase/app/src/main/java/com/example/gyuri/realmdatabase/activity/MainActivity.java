@@ -13,12 +13,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.gyuri.realmdatabase.app.Prefs;
 import com.example.gyuri.realmdatabase.R;
 import com.example.gyuri.realmdatabase.adapters.BooksAdapter;
 import com.example.gyuri.realmdatabase.adapters.RealmBooksAdapter;
 import com.example.gyuri.realmdatabase.model.Book;
 import com.example.gyuri.realmdatabase.realm.RealmController;
+
+import java.util.ArrayList;
+
 import io.realm.Realm;
 import io.realm.RealmResults;
 
@@ -141,35 +143,35 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Book> books = new ArrayList<>();
 
         Book book = new Book();
-        book.setId(1 + System.currentTimeMillis());
+        book.setId(1 /*+ System.currentTimeMillis()*/);
         book.setAuthor("Reto Meier");
         book.setTitle("Android 4 Application Development");
         book.setImageUrl("http://api.androidhive.info/images/realm/1.png");
         books.add(book);
 
         book = new Book();
-        book.setId(2 + System.currentTimeMillis());
+        book.setId(2/* + System.currentTimeMillis()*/);
         book.setAuthor("Itzik Ben-Gan");
         book.setTitle("Microsoft SQL Server 2012 T-SQL Fundamentals");
         book.setImageUrl("http://api.androidhive.info/images/realm/2.png");
         books.add(book);
 
         book = new Book();
-        book.setId(3 + System.currentTimeMillis());
+        book.setId(3 /*+ System.currentTimeMillis()*/);
         book.setAuthor("Magnus Lie Hetland");
         book.setTitle("Beginning Python: From Novice To Professional Paperback");
         book.setImageUrl("http://api.androidhive.info/images/realm/3.png");
         books.add(book);
 
         book = new Book();
-        book.setId(4 + System.currentTimeMillis());
+        book.setId(4/* + System.currentTimeMillis()*/);
         book.setAuthor("Chad Fowler");
         book.setTitle("The Passionate Programmer: Creating a Remarkable Career in Software Development");
         book.setImageUrl("http://api.androidhive.info/images/realm/4.png");
         books.add(book);
 
         book = new Book();
-        book.setId(5 + System.currentTimeMillis());
+        book.setId(5/* + System.currentTimeMillis()*/);
         book.setAuthor("Yashavant Kanetkar");
         book.setTitle("Written Test Questions In C Programming");
         book.setImageUrl("http://api.androidhive.info/images/realm/5.png");

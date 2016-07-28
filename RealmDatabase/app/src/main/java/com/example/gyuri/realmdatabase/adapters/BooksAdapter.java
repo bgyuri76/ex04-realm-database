@@ -19,7 +19,6 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 
 import com.example.gyuri.realmdatabase.R;
-import com.example.gyuri.realmdatabase.app.Prefs;
 import com.example.gyuri.realmdatabase.model.Book;
 import com.example.gyuri.realmdatabase.realm.RealmController;
 import io.realm.Realm;
